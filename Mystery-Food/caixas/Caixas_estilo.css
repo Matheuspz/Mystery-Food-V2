@@ -3,6 +3,10 @@ body {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
 }
+    @font-face {
+        font-family: MysteryFood; 
+        src: url(/Mystery-Food/FonteMysteryFood.otf);
+    }
 
     .fundo {
         width: 100%;
@@ -16,7 +20,7 @@ body {
 
             width: 100%;
             height: 80px;
-            background-color: #333333;
+            background-color: #1c1a9e;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -38,8 +42,14 @@ body {
 
                 .button_logo {
                     height: 50px;
-                    width: 60px;
-                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    font-family: MysteryFood;
+                    font-size: 30px;
+                    color: #ffffff;
+                    background-color: #1c1a9e;
+                    text-decoration: none;
+                    padding-top: 16px;
                 }
                 .button_logo:hover
                 {
@@ -52,10 +62,10 @@ body {
                     height: 5vh;
                     font-size: 20px;
                     border-radius: 5px;
-                    background-color: #333333;
+                    color: #ffff;
                     font-family: sans-serif;
-                    border-style: none;
-                    color: #ffffff;
+                    border: none;
+                    background-color: #1c1a9e; 
                 }
 
                     .button_inicio:hover {
@@ -67,10 +77,10 @@ body {
                     height: 5vh;
                     font-size: 20px;
                     border-radius: 5px;
-                    background-color: #333333;
+                    background-color: #1c1a9e;
                     font-family: sans-serif;
                     border: none;
-                    color: #ffffff;
+                    color:#ffff;
                 }
 
                     .button_caixastop:hover {
@@ -158,9 +168,9 @@ body {
             
             .carrinhobtn {
                 height: 5vh;
-                width: 5vh;
-                background-color: #333333;
+                 width: 5vh;
                 border: none;
+                background-color: #1c1a9e;
             }
                 .carrinhoimg {
                     height: 80%;
@@ -174,12 +184,12 @@ body {
                 }
                                 .sidenav {
                                     height: 100%;
-                                    width: 0;
+                                     width: 0;
                                     position: fixed;
                                     z-index: 1;
                                     top: 80px;
                                     right: 1300px;
-                                    background-color: #111;
+                                    background-color: #000000;
                                     overflow-x: hidden;
                                     transition: 0.5s;
                                     padding-top: 70px;
@@ -190,7 +200,7 @@ body {
                                     padding: 8px 8px 8px 32px;
                                     text-decoration: none;
                                     font-size: 25px;
-                                    color: #818181;
+                                    color: #000000;
                                     display: block;
                                     transition: 0.3s;
                                 }
@@ -243,20 +253,17 @@ body {
                                             height: 15%;
                                         }
 
-        .espaco_caixa
-        {
-            width: 100%;
-            height: 1vh;
-            background-color: #707070;
-        }
+        
   
         .info {
             width: 100%;
             height: 100vh;
-            background-color: #707070;
+            background-color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            background-image: url("fundo_total.svg");
+            background-size: 105vh;
         }
 
             .espacamento_entre_caixas {
@@ -296,10 +303,10 @@ body {
             {
                 height: 22vh;
                 width: 20%;
-                background-color: #000000;
+                background-color: #1c1a9e;
                 border-radius: 20px;
-                border: 5px solid #474747;
-                box-shadow: 1px 1px 6px black;
+                border: 5px solid #000000;
+                box-shadow: 0.5px 0.5px 10px black;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -318,7 +325,7 @@ body {
                         font-size:1.6rem;
                         font-family: sans-serif;
                         color: #ffff;
-                        background-color: #000000;
+                        background-color: #1c1a9e;
                         font-weight: bolder;
                     }
                         .caixapeqbtn:hover {
@@ -332,11 +339,13 @@ body {
                             display: flex;
                             background-color: #ffffff;
                             flex-direction: row;
+                            background-image: url("fundo_total.svg");
+                            background-size: 105vh;
                             
                             display: none;            /* Display irá aparecer quando clicar no botão */
                         }
                             .caixa_peq_expandida_esq {
-                                background-color: #707070;
+                                
                                 height: 100%;
                                 width: 25%;
                                 display: flex;
@@ -347,7 +356,7 @@ body {
 
                             }
                                 .caixa_peq_exp_mini {
-                                    background-color: #303030; 
+                                     
                                     height: 38.4%; 
                                     width: 100%; 
                                     border-radius: 5px;
@@ -431,7 +440,7 @@ body {
                                     .btn_qtd {
                                         width: 10%;
                                         height: 40%;
-                                        background-color: #979696;
+                                        
                                         border: none;
                                     }
                                         .btn_qtd:hover {
@@ -444,7 +453,7 @@ body {
                                         height: 40%;
                                         width: 30%;
                                         text-align: center;
-                                        background-color: #979696;
+                                        
                                         font-family: sans-serif;
                                         font-size: 20px;
                                         color: #000000;
@@ -541,10 +550,10 @@ body {
             {
                 height: 22vh;
                 width: 20%;
-                background-color: #000000;  
+                background-color: #1c1a9e;  
                 border-radius: 20px;
-                border: 5px solid #474747;
-                box-shadow: 1px 1px 6px black;
+                border: 5px solid   #000000;
+                box-shadow: 0.5px 0.5px 0.5px black;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -563,10 +572,10 @@ body {
             {
                 height: 22vh;
                 width: 20%;
-                background-color: black;  
+                background-color: #1c1a9e;  
                 border-radius: 20px;
-                border: 5px solid #474747;
-                box-shadow: 1px 1px 6px black;
+                border: 5px solid #000000;
+                box-shadow: 0.5px 0.5px 10px black;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

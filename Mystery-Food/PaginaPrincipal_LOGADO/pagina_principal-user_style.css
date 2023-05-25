@@ -3,6 +3,10 @@ body {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
 }
+    @font-face {
+        font-family: MysteryFood; 
+        src: url(/Mystery-Food/FonteMysteryFood.otf);
+    }
 
     .fundo {
         width: 100%;
@@ -16,7 +20,7 @@ body {
 
             width: 100%;
             height: 80px;
-            background-color: #333333;
+            background-color: #1c1a9e;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -30,6 +34,7 @@ body {
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
+               
             }
 
                 .logo {
@@ -38,14 +43,20 @@ body {
 
                 .button_logo {
                     height: 50px;
-                    width: 60px;
-                    border-radius: 10px;
-                    
+                    display: flex;
+                    flex-direction: row;
+                    font-family: MysteryFood;
+                    font-size: 30px;
+                    color: #ffffff;
+                    background-color: #1c1a9e;
+                    text-decoration: none;
+                    padding-top: 16px;
                 }
+                
                 .button_logo:hover {
                     
                     border-radius: 10px;
-                    background-color: #333333;
+                    
                 }
                 .button_inicio {  
                     height: 5vh;
@@ -54,7 +65,7 @@ body {
                     color: #ffff;
                     font-family: sans-serif;
                     border: none;
-                    background-color: #333333;
+                    background-color: #1c1a9e; 
                 }
 
                     .button_inicio:hover {
@@ -66,7 +77,7 @@ body {
                     height: 5vh;
                     font-size: 20px;
                     border-radius: 5px;
-                    background-color: #333333;
+                    background-color: #1c1a9e;
                     font-family: sans-serif;
                     border: none;
                     color:#ffff;
@@ -159,12 +170,19 @@ body {
                     .carrinhobtn {
                         height: 5vh;
                         width: 5vh;
-                        background-color: #333333;
                         border: none;
+                        background-color: #1c1a9e;
+                        
+                        border-radius: 30px;
+                    }
+                    .carrinhobtn:hover
+                    {
+                        box-shadow: 1px 1px 10x  black;
                     }
                         .carrinhoimg {
                             height: 80%;
                             width: 100%;
+                            
                         }
                         .carrinhobtn:hover {
                             cursor: pointer;
@@ -179,7 +197,7 @@ body {
                                             z-index: 1;
                                             top: 80px;
                                             right: 1300px;
-                                            background-color: #111;
+                                            background-color: #000000;
                                             overflow-x: hidden;
                                             transition: 0.5s;
                                             padding-top: 70px;
@@ -190,7 +208,7 @@ body {
                                             padding: 8px 8px 8px 32px;
                                             text-decoration: none;
                                             font-size: 25px;
-                                            color: #818181;
+                                            color: #000000;
                                             display: block;
                                             transition: 0.3s;
                                         }
@@ -243,42 +261,31 @@ body {
                                                         height: 15%;
                                                     }
                                             
-        .espacamento {
-            background-color: #707070;
-            width: 100%;
-            height: 60px;
-        }
-
+        
         .info {
             width: 100%;
             height: 100vh;
-            background-color: #707070;
+            background-color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #ffffff;
+            color: #000000;
+            background-image: url("fundo_total.svg");
+            background-size: 105vh;
         }
 
-            .espacamento2 {
-                width: 100%;
-                height: 1vh;
-            }
-
+           
             .lema {
                 text-align: center;
                 font-size: 1.5em;
                 font-family: sans-serif;
             }
 
-            .espacamento3 {
-                width: 100%;
-                height: 8vh;
-            }
+           
 
             .compra {
-                background-color: #171616;
                 width: 100%;
-                height: 70vh;
+                height: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -286,13 +293,11 @@ body {
             }
             
             .info_info {
-                width: 17.5%;
-                height: 37vh;
+                width: 20%;
+                height: 40%;
+                top: 50vh;
                 background-color: #1f2449;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                position: absolute;
                 border-radius: 10px;
                 background-image:url(CAIXASDOSUL.svg);
                 background-size: cover;
@@ -322,7 +327,7 @@ body {
                         cursor: pointer;
                         color: #ff0000;
                     }
-                    .lonk
+                    .link_caixas
                     {
                         width: 100%;
                         display: flex;

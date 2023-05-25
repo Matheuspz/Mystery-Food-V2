@@ -9,7 +9,10 @@ body
        
 
 }
-
+@font-face {
+    font-family: MysteryFood; 
+    src: url(/Mystery-Food/FonteMysteryFood.otf);
+}
 .D1
 {
     width: 100%;
@@ -20,21 +23,22 @@ body
 .circulo
 {
     width: 1200px;
-    height: 1200px;
-    background-color: #000;   
-    border-radius: 1000px;
-    position: relative;
-    top: -390px;
-    left: -190px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    font-size: 80px;
-    font-family: sans-serif;
+height: 1200px;
+background-color: #1c1a9e;
+border-radius: 1000px;
+position: relative;
+top: -390px;
+left: -190px;
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+flex-direction: column;
+color: rgb(255, 255, 255);
+font-size: 70px;
+font-family: MysteryFood;
+background-image: url(fundo_total.svg);
 }
 
 .Entrar
@@ -44,13 +48,17 @@ body
     justify-content: center;
     align-items: center;
     width: 25%;
-    background-color: #4d4c4c;
+    background-color: #2e2cc2;
     left: 925px;
     top: 110px;
-    position: absolute; 
-    font-size: 20px;
+    position: absolute;
+    border-width: 5px;
+    box-shadow: 3px 3px 10px black;
     border-radius: 30px;
-    box-shadow: 3px 3px 5px black;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-image: url(fundo_total.svg);
+    background-size: 200vh;
 }
 .caixa_larga
 {
@@ -60,6 +68,7 @@ body
     border-color: black;
     border-width: 2px;
     border-style: solid;
+    border-radius: 10px;
     
 }
 form
@@ -104,12 +113,12 @@ legend
 
 .butao
 {
-    width: 25%;
-    height: 30px;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    background-color: #ffff;
+    width: 45%;
+height: 30px;
+border-color: black;
+border-width: 2px;
+border-style: solid;
+border-radius: 10px;
 
 }
 .butao:hover
